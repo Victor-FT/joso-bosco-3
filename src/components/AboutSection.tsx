@@ -12,7 +12,7 @@ const AboutSection: React.FC = () => {
               alt={`${company}`}
               width={150}
               height={80}
-              className="w-full h-auto max-w-[150px]"
+              className="w-full h-auto max-w-[150px] opacity-50 hover:opacity-100 transition-all duration-300 ease-in-out"
             />
           </div>
         ))}
@@ -69,21 +69,24 @@ const AboutSection: React.FC = () => {
         </div>
       </div>
       <div className="flex flex-col gap-8 md:gap-12 w-full items-center justify-center mt-12 md:mt-24">       
-        <h2 className='text-xl font-bold text-orange-600'>Ferramentas</h2>
-        <div className="flex flex-wrap gap-8 md:gap-12 w-full items-center justify-center px-4 md:px-0">
-          {tools.map((tool, index) => (
-            <div key={index} className="w-16 md:w-20">
-              <Image
-                src={`/${tool}`}
-                alt={`${tool}`}
-                width={80}
-                height={80}
-                layout="responsive"
-              />
-            </div>
-          ))}
-        </div>
+      <h2 className='text-xl font-bold text-orange-600'>Ferramentas</h2>
+      <div className="flex flex-wrap gap-8 md:gap-12 w-full items-center justify-center px-4 md:px-0">
+        {tools.map((tool, index) => (
+          <div 
+            key={index} 
+            className="w-16 md:w-20 transition-all duration-300 ease-in-out hover:scale-110 hover:rotate-3"
+          >
+            <Image
+              src={`/${tool}`}
+              alt={`${tool}`}
+              width={80}
+              height={80}
+              layout="responsive"
+            />
+          </div>
+        ))}
       </div>
+    </div>
         
     </section>
   );
