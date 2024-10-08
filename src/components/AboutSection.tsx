@@ -3,7 +3,7 @@ import React from 'react';
 
 const AboutSection: React.FC = () => {
   return (
-    <section id="about" className="min-h-screen py-20 bg-black text-white flex flex-col gap-40">
+    <section id="about" className="min-h-screen py-20 bg-black text-white flex flex-col gap-40 overflow-x-hidden">
       <div className="flex flex-wrap justify-center gap-4 sm:gap-8 lg:gap-12 w-full items-center px-4 lg:px-0">
         {companies.map((company, index) => (
           <div key={index} className="w-1/2 sm:w-1/3 md:w-auto flex justify-center items-center p-2">
@@ -40,7 +40,7 @@ const AboutSection: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] bg-[rgba(114,0,255,.23)] bg-gradient-to-b from-[#f6b918] to-[#442300] opacity-100 border border-black rounded-tl-[25vw] rounded-bl-[25vw] justify-start items-center md:ml-[40px] flex mt-8 md:mt-0">
+      <div className="relative hidden md:flex w-[120%] h-[300px] sm:h-[400px] md:h-[450px] bg-[rgba(114,0,255,.23)] bg-gradient-to-b from-[#f6b918] to-[#442300] opacity-100 border border-black rounded-tl-[100%] rounded-bl-[100%] sm:rounded-tl-[25vw] sm:rounded-bl-[25vw] justify-start items-center md:ml-[40px] mt-8 md:mt-0">
         <Image
           src="/606f7866b25077431c7531d9_7-p-800.png"
           alt="Illustration of office with cat and computers"
