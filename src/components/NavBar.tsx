@@ -25,9 +25,9 @@ const Navbar: React.FC = () => {
         </div>
         
         <div className="w-1/3 flex justify-end space-x-4">
-          <a href="#" aria-label="Facebook"><LinkedIn className="w-5 h-5" /></a>
-          <a href="#" aria-label="Twitter"><Behance className="w-5 h-5 fill-white" /></a>
-          <a href="#" aria-label="Instagram"><Mail className="w-5 h-5" /></a>
+          <a href="https://www.linkedin.com/in/bosco-leite-788559b7" aria-label="LinkedIn"><LinkedIn className="w-5 h-5" /></a>
+          <a href="https://www.behance.net/boscoleite" aria-label="Behance"><Behance className="w-5 h-5 fill-white" /></a>
+          <a href="#" aria-label="Email"><Mail className="w-5 h-5" /></a>
         </div>
       </nav>
 
