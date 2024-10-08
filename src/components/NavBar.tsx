@@ -1,7 +1,9 @@
 'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { Menu, X, Facebook, Twitter, Instagram } from 'lucide-react';
+import { Menu, X, Mail } from 'lucide-react';
+import { LinkedIn } from './Linkedin';
+import { Behance } from './Behance';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,9 +25,9 @@ const Navbar: React.FC = () => {
         </div>
         
         <div className="w-1/3 flex justify-end space-x-4">
-          <a href="#" aria-label="Facebook"><Facebook className="w-5 h-5" /></a>
-          <a href="#" aria-label="Twitter"><Twitter className="w-5 h-5" /></a>
-          <a href="#" aria-label="Instagram"><Instagram className="w-5 h-5" /></a>
+          <a href="#" aria-label="Facebook"><LinkedIn className="w-5 h-5" /></a>
+          <a href="#" aria-label="Twitter"><Behance className="w-5 h-5 fill-white" /></a>
+          <a href="#" aria-label="Instagram"><Mail className="w-5 h-5" /></a>
         </div>
       </nav>
 
