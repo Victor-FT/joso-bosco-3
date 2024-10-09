@@ -1,3 +1,4 @@
+import { Book, Camera, FileText, LayoutGrid, LineChart, Package, Palette, PenTool, Share2, Signpost } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react';
 
@@ -31,8 +32,8 @@ const AboutSection: React.FC = () => {
           <div className="mt-10">
             <div className="flex flex-wrap">
               {features.map((feature, index) => (
-                <div key={index} className="flex items-center bg-zinc-900 text-white rounded-full p-4 mr-4 mb-4 hover:scale-110 transition-transform duration-300">
-                  <Image width={24} height={24} src={feature.icon} alt={feature.title} className="mr-2" />
+                <div key={index} className="flex items-center bg-zinc-900 text-white rounded-full p-4 mr-4 mb-4 hover:scale-110 transition-transform duration-300 justify-center gap-2">
+                  <feature.icon className="w-4 h-4text-white" />
                   <p className="text-sm text-white">{feature.title}</p>
                 </div>
               ))}
@@ -54,8 +55,8 @@ const AboutSection: React.FC = () => {
     <div className="flex flex-col gap-12 md:gap-24 w-full items-center justify-center px-4 md:px-0">
         <div className='flex flex-col gap-4 w-full items-center justify-center'>
           <h2 className='text-4xl md:text-6xl font-bold text-orange-600 text-center'>Como Faço?</h2>
-          <p className='text-xl md:text-2xl text-gray-400 font-semibold text-center px-4 md:px-8'>
-            Utilizo a metodologia adaptada &quot;duplo diamante&quot; que consiste nas seguintes etapas.
+          <p className='text-xl md:text-2xl text-gray-400 font-semibold text-center px-4 md:px-8 max-w-5xl'>
+          Utilizo abordagem que coloca as pessoas no centro do processo de criação, buscando soluções inovadoras e eficazes. E, consiste nas seguintes etapas:
           </p>
         </div>
         <div className="w-full max-w-[900px]">
@@ -93,30 +94,16 @@ const AboutSection: React.FC = () => {
 };
 
 const features = [
-  {
-    icon: 'https://cdn.prod.website-files.com/606694bd40508c617a3f20fb/606f910cfc7e7f5c01699dbe_noun_sketch_2392950.svg',
-    title: 'UX Design',
-  },
-  {
-    icon: 'https://cdn.prod.website-files.com/606694bd40508c617a3f20fb/606f9142b737cc688553ded3_noun_strategy_3848863.svg',
-    title: 'Estratégia digital',
-  },
-  {
-    icon: 'https://cdn.prod.website-files.com/606694bd40508c617a3f20fb/606f96dd5a7dd36dda9797f5_noun_Research_3857106.svg',
-    title: 'Pesquisa',
-  },
-  {
-    icon: 'https://cdn.prod.website-files.com/606694bd40508c617a3f20fb/606f99273a09bec96c6e74e2_noun_Online%20Branding_1771368.svg',
-    title: 'Branding',
-  },
-  {
-    icon: 'https://cdn.prod.website-files.com/606694bd40508c617a3f20fb/606f991350dac25256adf853_noun_website_3308500.svg',
-    title: 'Estratégia de produto',
-  },
-  {
-    icon: 'https://cdn.prod.website-files.com/606694bd40508c617a3f20fb/611a7b3ba0f77081b9c19ef6_noun_marketing_1275173%20(1).svg',
-    title: 'Marketing',
-  },
+  { icon: Palette, title: 'Identidade visual' },
+  { icon: LayoutGrid, title: 'Mídia impressa ou digital' },
+  { icon: LineChart, title: 'Infográficos' },
+  { icon: FileText, title: 'Papelaria' },
+  { icon: Camera, title: 'Fotografia' },
+  { icon: Book, title: 'Publicações' },
+  { icon: Signpost, title: 'Sinalização' },
+  { icon: Package, title: 'Embalagens' },
+  { icon: PenTool, title: 'Ilustrações' },
+  { icon: Share2, title: 'Redes sociais' },
 ];
 
 const companies = [
