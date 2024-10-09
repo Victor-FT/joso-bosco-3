@@ -30,6 +30,7 @@ const HeroSection: React.FC = () => {
         objectFit="cover"
         alt="Background"
         className="bg-gray-900"
+        priority
       />
       <div className="absolute inset-0 bg-black opacity-60 z-[1]"></div>
       <div className="relative z-[1] w-full px-4">

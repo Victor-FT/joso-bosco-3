@@ -10,11 +10,10 @@ const PortfolioSection: React.FC = () => {
         {projetos.map((projeto, index) => (
           <Project
             key={index}
-            srcBase={projeto[0]}
-            alt={projeto[1]}
-            nome={projeto[2]}
-            tipo={projeto[3]}
-            contagemFotos={projeto[4]}
+            nome={projeto.nome}
+            tipo={projeto.tipo}
+            foto={projeto.foto}
+            url={projeto.url}
           />
         ))}
       </div>
@@ -22,11 +21,29 @@ const PortfolioSection: React.FC = () => {
   );
 };
 
-const projetos: Array<[string, string, string, string, number]> = [
-  ["/Projetos/CartilhaAgroecologica", "Cartilha agroecológica", "Cartilha agroecológica", "Identidade Visual", 6],
-  ["/Projetos/PosterAmazonia", "Poster Amazonia", "Poster Amazonia", "Design de Editorial", 3],
-  ["/Projetos/RelatorioFAS2023", "Relatório FAS 2023", "Relatório FAS 2023", "Naming, Logotipo, Rótulo", 1],
-  ["/Projetos/SeloComemorativo", "Selo comemorativo", "Selo comemorativo", "Design Editorial", 0],
-];
+const projetos: Array<{nome: string, tipo: string, foto: string, url: string}> = [{
+  nome: "Cartilha agroecológica",
+  tipo: "Identidade Visual",
+  foto: "p1.jpg",
+  url: "https://www.behance.net/gallery/133717169/Praticas-Agroecologicas/modules/1145251535"
+},
+{
+  nome: "Poster Amazonia",
+  tipo: "Design de Editorial",
+  foto: "p3.jpg",
+  url: "https://www.behance.net/gallery/134052531/Amazonia-em-Chamas-Amazon-forest-on-fire/modules/758747897"
+},
+{
+  nome: "Relatório FAS 2023",
+  tipo: "Naming, Logotipo, Rótulo",
+  foto: "p2.jpg",
+  url: "https://www.behance.net/gallery/200042079/Relatorio-de-Atividades-2023-FAS/modules/1139088867"
+},
+{
+  nome: "Selo comemorativo",
+  tipo: "Design Editorial",
+  foto: "p4.jpg",
+  url: "https://www.behance.net/gallery/209596329/Selo-Comemorativo/modules/1190838709" 
+}];
 
 export default PortfolioSection;
