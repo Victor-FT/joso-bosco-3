@@ -4,7 +4,7 @@ import { Project } from './Project';
 const PortfolioSection: React.FC = () => {
   return (
     <section id="portfolio" className=" flex flex-col min-h-screen py-20 px-6 bg-black items-center w-full">
-      <h2 className="text-3xl font-bold text-orange-600">📁 Projetos</h2>
+      <h2 className="text-4xl md:text-6xl  font-bold text-orange-600">📁 Projetos</h2>
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl">
         {/* Projetos */}
         {projetos.map((projeto, index) => (

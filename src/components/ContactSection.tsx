@@ -5,7 +5,7 @@ import { WhatsApp } from './WhatsApp';
 const ContactSection: React.FC = () => {
   return (
     <section id="contact" className="flex flex-col items-center justify-center gap-3 min-h-screen py-20 px-6 bg-black text-white">
-      <h2 className="text-3xl font-bold text-orange-600">📬 Vamos Conversar?</h2>
+      <h2 className="text-4xl md:text-6xl font-bold text-orange-600">📬 Vamos Conversar?</h2>
       <p className='text-2xl font-semibold text-white max-w-screen-md text-center'>
         Gostaria de conversar ou saber mais sobre meus projetos? Entre com contato comigo pelo WhatsApp!
         

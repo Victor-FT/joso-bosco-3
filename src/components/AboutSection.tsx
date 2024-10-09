@@ -70,7 +70,7 @@ const AboutSection: React.FC = () => {
         </div>
       </div>
       <div className="flex flex-col gap-8 md:gap-12 w-full items-center justify-center mt-12 md:mt-24">       
-      <h2 className='text-xl font-bold text-orange-600'>Ferramentas</h2>
+      <h2 className='text-4xl md:text-6xl  font-bold text-orange-600'>Ferramentas</h2>
       <div className="flex flex-wrap gap-8 md:gap-12 w-full items-center justify-center px-4 md:px-0">
         {tools.map((tool, index) => (
           <div 
